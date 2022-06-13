@@ -1,0 +1,44 @@
+/**
+ * @name DiscordBorders
+ * @version 0.0.1
+ * @description Adds a simple yet fairly customizable border to discord's main window
+ * @author Lucyuwu
+ * @authorId 911388263967752223
+ */
+
+ :root {
+  /* Border configuration */
+   --border-top: 30px; /* default: 30px */
+   --border-bottom: 30px; /* default: 30px */
+   --border-right: 30vh; /* default: 10vh */
+   --border-left: 30vh; /* default: 10vh */
+
+   /* Misc configuration */
+   --border-roundness: 10px; /* default: 10px */
+
+   /* Shadow configuration; To disable shadows remove or comment "--shadow-pos" */
+   --shadow-pos: 10px 10px; /* default: 10px 10px; */
+   --shadow-dissipation: 20px; /* default: 20px */
+
+   /* Background configuration */
+   --border-background-image: url("https://i.imgur.com/uaNnZFa.jpeg")
+}
+
+/* Here lies the cascading style sheet. It was built quickly and it probably sucks */
+
+.layers-OrUESM>.layer-86YKbF {
+  top: var(--border-top);
+  bottom: var(--border-bottom);
+  right: var(--border-right);
+  left: var(--border-left);
+  border-radius: var(--border-roundness);
+}
+
+.layer-86YKbF {
+  box-shadow: var(--shadow-pos) var(--shadow-dissipation);
+}
+
+.layers-OrUESM {
+  background-image: var(--border-background-image);
+  background-size: 100%;
+}
